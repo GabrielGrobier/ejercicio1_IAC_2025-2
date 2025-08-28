@@ -23,3 +23,11 @@ module "network_interface" {
     resource_group = local.resource_group
   
 }
+
+module "virtualMachine" {
+    source = "./modules/virtual_machine"
+    resource_group_name = local.resource_group
+    network_interface = module.network_interface.network_interface_id
+    location = local.location
+  
+}

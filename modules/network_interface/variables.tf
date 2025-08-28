@@ -23,6 +23,6 @@ variable "ip_configuration_name" {
 }
 variable "type_ip" {
     type = string
-    default = "dynamic"
+    default = "Dynamic"
   
 }
