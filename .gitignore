@@ -1,0 +1,30 @@
+# Archivos locales de Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Archivos de plan (no deben versionarse)
+*.tfplan
+*.tfplan.*
+
+# Archivos de override (configuración local temporal)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Carpetas de Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Archivos sensibles
+terraform.tfvars
+*.tfvars.json
+*.tfvars.secret
+*.auto.tfvars
+*.auto.tfvars.json
+*.auto.tfvars.secret
+
+# Archivos de salida de ejecución
+*.log
